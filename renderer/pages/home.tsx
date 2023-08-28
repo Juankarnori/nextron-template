@@ -5,7 +5,7 @@ import { MainLayout } from '../components/layouts'
 const HomePage = () => {
   return (
     <MainLayout title={'Copiadora El EstudianteJr'}>
-
+      <Typography>Home Page</Typography>
     </MainLayout>
   )
 }

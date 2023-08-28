@@ -10,7 +10,7 @@ export const MainLayout:FC<Props> = ({ title, children }) => {
   return (
     <>
         <Head>
-            { title }
+            <title>{title}</title>
         </Head>
 
         <nav>
@@ -18,7 +18,12 @@ export const MainLayout:FC<Props> = ({ title, children }) => {
         </nav>
         <SideMenu />
 
-        <main>
+        <main style={{
+            margin: '80px auto',
+            maxWidth: '1440px',
+            padding: '0px 30px'
+        }}
+        >
             { children }
         </main>
 
